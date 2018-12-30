@@ -60,8 +60,8 @@ def locate_ob():
         print('Open Babel location automatically determined by pkg-config:')
     except PkgConfigError as e:
         print('Warning: %s.\nGuessing Open Babel location:' % e)
-        include_dirs = '/usr/local/include/openbabel-2.0'
-        library_dirs = '/usr/local/lib'
+        include_dirs = '/app/.apt/usr/share/openbabel'
+        library_dirs = '/app/.apt/usr/lib'
     return include_dirs, library_dirs
 
 
